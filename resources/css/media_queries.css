@@ -1,0 +1,165 @@
+
+
+/*--Big tablets from 1024 to 1200 --*/
+@media only screen and (max-width:1200px) {
+    .section0{
+        width: 100%;
+        padding: 0 2%;
+      } 
+    .row{
+        padding: 0 2%;
+        width: 100%;
+    }  
+}
+
+/*--Smaller tablet from 768to1023--*/
+@media screen and (max-width:1023px) {
+    body{
+        font-size: 18px;
+    }
+    .section{
+        padding: 60px 0;
+    }
+    .section1-upper-text
+    {
+       width: 82%;
+       margin-left: 9%;
+       margin-right: 9%;
+    }
+    .simple-steps-all img{
+        width: 50%;
+      }
+    .simple-steps-all:last-child{
+        padding-left: 3%;
+        margin-top: 40px;
+      }
+    .simple-steps{
+        margin-bottom: 40px;
+      }
+      .app-btn img{
+        margin-top: 10px;
+        width: auto;
+      }
+      .city-feature li i{
+        width: 20px;
+        margin-right: 0px;
+      }
+      .city-feature{
+          font-size: 90%;
+      }
+      .plans-single{
+        width: 100%;
+      }
+      .plans-middle-box ul{
+        font-size: 90%;
+      }
+      .contact-form{
+        width: 70%;
+        margin: 0 15%;
+      }
+}
+
+/*--Bigger phones from 481to767--*/
+@media screen and (max-width:767px) {
+    body{
+        font-size: 16px;
+    }
+    .section{
+        padding: 30px 0;
+    }
+    .row, .section0{
+        padding: 0 4%;
+    }  
+    .col{
+        width: 100%;
+        margin: 0% 0 4% 0%;
+    }
+    h1{
+        font-size: 180%;
+    }
+    h2{
+        font-size: 150%;
+    }
+    .main-navigation{
+        float: left;
+        margin-top: 20px;
+        margin-left: 25px;
+        display: none;
+    }
+    .main-navigation li{
+        display: block;
+    }
+    .mobile-nav-icon{
+      display: block;
+      float: right;
+    }
+    .sticky-nav .mobile-nav-icon{
+      color: #555;
+    }
+    .section1-upper-text{
+        width: 100%;
+        margin-left:0;
+        margin-right: 0;;
+    }
+    .simple-steps-all img{
+        width: 40%;
+      }
+      .simple-steps-all:first-child{
+        text-align: center;
+      }
+    .simple-steps-all:last-child{
+        margin-top: 30px;
+      }
+    .simple-steps{
+        margin-bottom: 40px;
+      }
+      .simple-steps-no{
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+      }
+      .app-btn img{
+        margin-top: 0;
+        height: 45px;
+        width: auto;
+        margin-left: 20px;
+      }
+      .plans-single{
+        width: 90%;
+      }
+}
+
+
+/*--Smaller phones from 0to480--*/
+@media screen and (max-width:480px) {
+    .section{
+        padding: 25px 0;
+    }
+    .row, .section0{
+        padding: 0 2%;
+    } 
+    .app-btn img{
+        height: 40px;
+        margin-left: 5px;
+      }
+    .contact-form{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-links{
+        font-size: 90%;
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+    .footer-social-links{
+        float: left;
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+      }
+      footer p{
+        font-size: 90%;
+      }
+    
+}

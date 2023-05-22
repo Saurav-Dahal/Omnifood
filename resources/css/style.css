@@ -1,0 +1,553 @@
+
+/*--------Basic Setup----------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body{
+  background-color: #fff;
+  color: rgb(53, 53, 53);
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;  /*-------------Only use this when text comes out horizontally.------*/
+}
+.clearfix{zoom: 1}
+.clearfix:after{
+  content: ".";
+  clear:both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+*:focus
+{outline: none;
+}
+/*--------Basic Setup ends----------*/
+
+
+/*----------Resuable components----------*/
+.row{
+  width: 1140px;
+  margin: 0 auto;
+ }
+ .section{
+   padding: 80px 0;
+ }
+ h1, h2, h3{
+  font-weight: 300; 
+  text-transform: uppercase;
+ }
+ h1{
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h2:after{
+  width: 100px;
+  height: 2px;
+  background-color: #e67e22;
+  display: block;
+  content: "";
+  margin: 0 auto;
+  margin-top: 30px;
+}
+h3{
+   font-size: 110%;
+   margin-bottom: 15px;
+}
+
+/*----------Resuable components ends----------*/
+
+
+/*-------------------header------------------------------*/
+ header{
+   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background_image.jpg);
+   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/background_image.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background_image.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+   background-attachment: fixed;
+ }
+
+/*----------------navigation-------------*/
+ .logo, .logo-black{
+   height: 100px;
+   width: auto;
+   float: left;
+   margin-top: 20px;
+ }
+ .logo-black{
+     display: none;
+ }
+ .main-navigation{
+   float: right;
+   list-style: none;
+   margin-top: 50px;
+ }
+ .main-navigation li{
+   display: inline-block;
+   margin-left: 40px;
+   font-size: 90%;  
+   padding: 8px 0;
+   border-bottom: 2px solid transparent;
+ }
+ .main-navigation li a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+ .main-navigation li:hover, .main-navigation li:active{
+    border-bottom: 2px solid #e67e22;
+   -webkit-transition: border-bottom 0.3s;
+   -o-transition: border-bottom 0.5s;
+   -webkit-transition: border-bottom 0.5s;
+   transition: border-bottom 0.5s;
+ }
+ .mobile-nav-icon{
+   float: right;
+   color: #fff;
+   margin-top: 30px;
+   font-size: 200%;
+   cursor: pointer;
+   display: none;
+ }
+ .sticky-nav{
+   background-color: rgb(255, 255, 255, 0.92);
+   position: fixed;
+   width: 100%;
+   -webkit-box-shadow: 0 2px 2px #efefef;
+           box-shadow: 0 2px 2px #efefef;
+   z-index: 9999;
+ }
+ .sticky-nav .logo{
+   display: none;
+ }
+ .sticky-nav .logo-black{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    height: 70px;
+    width: auto;
+ }
+ .sticky-nav  .main-navigation li a{
+  color: #333;
+ }
+ .sticky-nav  .main-navigation{
+  margin-top: 20px;
+}
+/*----------------navigation ends-------------*/
+
+ /*-----------------section0------------*/
+
+ .section0{
+  width: 1140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+ .btn{
+   display: inline-block;
+   font-weight: 300;
+   padding: 10px 30px;
+   text-decoration: none;
+   border-radius: 200px;
+   border: 1px solid #e67e22;
+   margin-right: 20px;
+ }
+ .btn1{
+   background-color: #e67e22;
+   color: #fff;
+ }
+ .btn2{ 
+   color: #e67e22;
+ }
+ .btn1:hover, .btn1:active{
+  background-color: transparent;
+  color: #e67e22;
+}
+.btn1:hover, .btn1:active, .btn2:hover, .btn2:active{
+  border: 1px solid #e67e22;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+ .btn2:hover, .btn2:active{
+  background-color: #e67e22; 
+  color: #fff; 
+ }
+ /*-----------------section0 ends------------*/
+
+/*--------------------------header ends--------------------*/
+
+/*---------------------------Section1 starts--------------------*/
+.section1-upper-text
+{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  line-height: 145%;
+}
+.section1-lower-box{
+  padding: 1%;
+}
+.section1-lower-box-icon{
+  font-size: 320%;
+  color: #e67e22;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  /* text-align: center; */
+}
+.section1-lower-box p{
+  line-height: 145%;
+  font-size: 90%;
+}
+/*---------------------------Section1 ends--------------------*/
+
+
+/*---------------------------Section2 starts--------------------*/
+.section2-img{
+  width: 100%;
+  list-style: none;
+}
+.section2-img li{
+  display: block;
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  background-color: #000;
+}
+.section2-img img{
+  width: 100%;
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+  opacity: 0.7; 
+}
+.section2-img img:hover{
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  opacity: 1;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  -o-transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+/*---------------------------Section2 ends--------------------*/
+
+
+/*---------------------------Section3 ends--------------------*/
+.section3{
+  background-color: #f4f4f4;
+} 
+.simple-steps-all{
+  margin-top: 30px;
+}
+.simple-steps-all:first-child{
+  text-align: right;
+  padding-right: 3%;
+}
+.simple-steps-all:last-child{
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.simple-steps-all img{
+  width: 40%;
+}
+.simple-steps{
+  margin-bottom: 50px;
+}
+.simple-steps-no{
+  font-size: 150%;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  margin-right: 25px;
+  float: left;
+}
+.app-btn img{
+  margin-top: 30px;
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+/*---------------------------Section3 ends--------------------*/
+
+
+/*---------------------------Section4 starts--------------------*/
+
+.section4-city{
+  padding: 10px;
+}
+.section4-city img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+.city-feature li{
+ list-style: none;
+ line-height: 150%;
+}
+.city-feature li i{
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 15px;
+  color: #e67e22;
+  font-size: 120%;
+  vertical-align: middle;
+}
+.city-feature li a{
+  text-decoration: none;
+  color: #e67e22;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e67e22;
+}
+.city-feature li a:hover{
+  color: rgb(53, 53, 53);
+  border-bottom: #fff;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  -o-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+
+}
+/*---------------------------Section4 ends--------------------*/
+
+
+/*---------------------------Section5 start--------------------*/
+.customer-testimonials{
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgb(0,0,0,0.8)), url(img/back-customers.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgb(0,0,0,0.8))), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0,0,0,0.8)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+} 
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 150%;
+  margin-top: 10%;
+  position: relative;
+}
+blockquote::before{
+  font-size: 500%;
+  content: "\201C";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+
+}
+cite{
+  display: block;
+  font-size: 90%;
+  margin-top: 25px;
+}
+cite img{
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+} 
+/*---------------------------Section5 ends--------------------*/
+
+
+/*---------------------------Section6 ends--------------------*/
+.plans{
+  background-color: #f4f4f4;
+}
+.plans-single{
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+  -webkit-box-shadow: 0 3px 3px #efefef;
+          box-shadow: 0 3px 3px #efefef;
+}
+.plans-upper-box,.plans-middle-box, .plans-lower-box{
+  padding: 5%;
+}
+.plans-upper-box, .plans-middle-box{
+  border-bottom: 1px solid #e8e8e8;
+}
+.plans-single h1{
+  color: #e67e22;
+}
+.plans-single p{
+  font-size: 80%;
+}
+.plans-upper-box span{
+  font-size: 40%;
+  text-transform: lowercase;
+}
+.plans-middle-box ul{
+  list-style: none;
+}
+.plans-middle-box ul li{
+  padding: 5px 0;
+}
+.plans-middle-box li i{
+  padding-right: 15px;
+  font-size: 60%;
+  color: #e67e22;
+  font-weight: 250%;
+}
+.plans-lower-box{
+  text-align: center;
+}
+/*---------------------------Section6 ends--------------------*/
+
+
+/*---------------------------Section7 start--------------------*/
+.contact-form{
+  width: 60%;
+  margin: 0 20%;
+}
+input[type=text], input[type=email],
+select, textarea{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc
+}
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, textarea::-moz-placeholder{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, textarea:-ms-input-placeholder{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, textarea::-ms-input-placeholder{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+textarea{
+  height: 100px;
+}
+input[type=checkbox]{
+  margin: 10px 5px 15px 0;
+
+}
+ select, option{
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+}
+/*---------------------------Section7 ends--------------------*/
+
+
+/*---------------------------Footer start--------------------*/
+footer{
+  background-color: #333;
+  padding: 50px 0;
+}
+.footer-links{
+  list-style: none;
+  float: left;
+  font-size: 80%;
+}
+.footer-social-links{
+  list-style: none;
+  float: right;
+  font-size: 135%;
+}
+.footer-links li, .footer-social-links li{
+  display: inline-block;
+  margin-right: 18px;
+}
+.footer-links li:last-child, .footer-social-links li:last-child{
+  margin-right: 0;
+}
+.footer-links li a, .footer-social-links li a{
+  text-decoration: none;
+  color: #888;
+}
+.footer-links li a:hover, .footer-links li a:active{
+  color: #ddd;
+  -webkit-transform: color 0.3s;
+      -ms-transform: color 0.3s;
+          transform: color 0.3s;
+}
+.ion-social-facebook:hover{
+color: #3b5998;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+.ion-social-twitter:hover{
+color: #00aced;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+.ion-social-googleplus:hover{
+color: #dd4b39;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+.ion-social-instagram:hover{
+color: #517fa4;
+-webkit-transition: 0.3s;
+-o-transition: 0.3s;
+transition: 0.3s;
+}
+footer p{
+  color: #888;
+  text-align: center;
+  font-size: 80%;
+  margin-top: 7.5px;
+}
+footer p:first-child{
+  margin-top: 20px;
+}
+/*---------------------------Footer ends--------------------*/
+
+
+/*---------------------------Animation--------------------*/
+.js-fade-effect1, .js-fade-effect2, .js-fade-effect3{
+   opacity: 0;
+}
+.js-fade-effect1.animated, .js-fade-effect2.animated, .js-fade-effect3.animated{
+   opacity: 1;
+   -webkit-animation-duration: 1s;
+           animation-duration: 1s;
+}
+
+/*---------------------------Animation ends--------------------*/
+
+
